@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  html {
+    background: gray;
+  }
+  
+  body {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px;
+    color: #444;
+    background: grey;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  nav,
+  footer {
+    background: gray;
+  }
+  
+  footer {
+    height: 10vh;
+    position: relative;
+    text-align: center;
+  }
+  
+  footer ul {
+    padding: 0;
+  }
+  
+  footer .icons-media {
+    margin: 0;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  
+  .centered {
+    text-align: center;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .nav-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-links-left,
+  .nav-links-right {
+    padding: 0;
+    margin: 1% 0;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 0.5rem;
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: darkgray;
+  }
+  
+  header {
+    /* padding: 12% 0; */
+    display:flex;
+    flex-direction: column;
+  
+    /* min-height: 100vh; */
+    /* position: relative; */
+    padding-top: 30vh;
+    text-align: center;
+  }
+  
+  #header-page-content {
+    flex:1;
+  }
+  
+  header ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header h1 {
+    line-height: 1.2;
+    margin: 0 0 15px;
+    font-size: 3.3rem;
+  }
+  
+  header h5 {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  
+  header h1,
+  header h5 {
+    color: #333333;
+  
+    animation-delay: -0.5s;
+    animation: fadein 1s;
+  }
+  
+  div .social-media {
+    text-align: center;
+  }
+  
+  header .icons-media {
+    /* position: absolute;
+    bottom: 56px;
+    left: 0px;
+    right: 0px; */
+  }
+  
+  footer .icons-media {
+    position: relative;
+    bottom: 56px;
+    left: 0px;
+    right: 0px;
+  }
+  
+  .icons-media li {
+    display: inline;
+    font-size: 2rem;
+    padding: 0.5%;
+    animation: fontbulger 1s;
+  }
+  
+  .icons-media li a {
+    color: black;
+  }
+  
+  .linkedin:hover {
+    color: #0077b5;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  
+  .github:hover {
+    color: #62287f;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  
+  .email:hover {
+    color: #d54d40;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  
+  section {
+    min-height: 200px;
+    padding: 6% 0;
+  }
+  
+  .about-headline,
+  .portfolio-headline {
+    text-align: center;
+    margin: 0 0 3rem;
+  }
+  
+  .portfolio-headline {
+  }
+  
+  .bio-page {
+    padding: 12% 7%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .bio-page p {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-pg-container {
+    padding: 2rem;
+  }
+  
+  .portfolio-img {
+    position: relative;
+    margin-bottom: 8rem;
+  }
+  .portfolio-img img {
+    width: 100%;
+  }
+  
+  .project-title {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .tech-icons {
+    font-size: 2rem;
+  }
+  
+  .project-description {
+    margin-top: 0.5rem;
+  }
+  
+  img.center {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fontbulger {
+    0% {
+      font-size: 0.1vh;
+      opacity: 0;
+    }
+    80% {
+      font-size: 2vh;
+      opacity: 0.2;
+    }
+    100% {
+      font-size: 5vh;
+      opacity: 1;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    header .icons-media {
+      /* position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px; */
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    header h1 {
+      font-size: 5.5rem;
+    }
+    header h5 {
+      font-size: 2rem;
+    }
+  
+    /* .portfolio-img-box {
+      display:flex;
+    } */
+  
+    .portfolio-img {
+      display: flex;
+    }
+  
+    .project-info {
+      width: 50%;
+      padding-left: 20px;
+      margin: auto 0;
+    }
+  
+    .portfolio-img img {
+      /* display: inline; */
+      margin: 0;
+      /* flex:1; */
+      width: 50%;
+    }
+  
+    .about-headline,
+    .portfolio-headline {
+      font-size: 2rem;
+    }
+  }
+  
+  .app-link {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(49, 97, 136);
+    transition: 0.3s;
+  }
+  
+  .app-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(55, 145, 218);
+  }
